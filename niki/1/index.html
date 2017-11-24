@@ -1,0 +1,18 @@
+<html>
+	<head></head>
+	<body>
+		
+		<script>
+			// scoping of var, let, const
+			
+			var age = 100;
+			if( age > 12) {
+				// since vars are 'function scoped' dogYears var 'leaks'
+				var dogYears = age * 7;
+				console.log('You are ' + dogYears + ' old');
+			}
+
+			// let and const are scoped to the 'bloc'
+		</script>
+	</body>
+</html>
