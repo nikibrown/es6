@@ -1,0 +1,38 @@
+<html>
+	<head></head>
+	<body>
+		<script>
+			// arrow functions
+			const names = ["Niki", "Kirstie"];
+
+			const fullNames = names.map(function(name) {
+				return name + " Lastname";
+				// return `${name} Lastname;
+			});
+
+			console.log(fullNames);
+
+			// remove word function and add =>
+			const fullNames2 = names.map((name) => {
+				return name + " Lastname";
+			});
+
+			// if there is only one argument you can drop the () around the parameter
+			const fullNames3 = names.map(name => {
+				return name + " Lastname";
+			});
+
+			// arrow functions are always anonymous functions
+
+			// you can set a var to a function though
+
+			const someFunction = (word) => {
+				alert(word);
+			}
+
+			someFunction("this is a string");
+			
+			
+		</script>
+	</body>
+</html>
